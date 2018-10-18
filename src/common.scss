@@ -1,0 +1,46 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+/*
+==========================================
+1. Imports
+==========================================
+*/
+
+$primary:       #4662EF;
+$secondary:     #2fc77c;
+
+//@import "bootstrap/bootstrap";
+body{
+    font-size: 13px;
+}
+
+// @import "bootstrap/functions";
+// @import "bootstrap/variables";
+// @import "bootstrap/mixins";
+// @import "bootstrap/tables";
+
+$fa-font-path: "plugin-scss/fontawesome/webfonts";
+@import "plugin-scss/fontawesome/scss/fontawesome.scss";
+@import "plugin-scss/fontawesome/scss/fa-solid.scss";
+@import "plugin-scss/fontawesome/scss/fa-regular.scss";
+@import "plugin-scss/fontawesome/scss/fa-brands.scss";
+
+@import "plugin-scss/absolutte-font/absolutte-font";
+
+
+[class*="editor-block-list-item-absolutte-blocks"] svg{
+    // width: 24px;
+    // height: 24px;
+    fill: #555d66;
+}
+/*
+==========================================
+14. Global Styles
+==========================================
+*/
+@import "plugin-scss/global";

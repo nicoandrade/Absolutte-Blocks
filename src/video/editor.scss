@@ -1,0 +1,35 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.editor-block-list__block[data-type="absolutte-blocks/video"]{
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.absolutte-section-video .absolutte-service-icon-wrap .components-button {
+	justify-content: center;
+}
+
+.absolutte-video-popup{
+	min-height: 150px;
+
+		.absolutte-video-popup-link{
+			background-color: #dddddd;
+
+				&::before{
+					display: none;
+				}
+				.components-button{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+		}
+}
+

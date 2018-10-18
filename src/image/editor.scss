@@ -1,0 +1,47 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.editor-block-list__block[data-type="absolutte-blocks/image"]{
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.absolutte-section-image{
+		.absolutte-image-content{
+			.absolutte-section-title{
+				line-height: 1.2;
+				
+					&::after{
+						display: none;
+					}
+
+					&.mce-content-body::after{
+						display: block;
+					}
+			}
+		}
+}
+
+.absolutte-image-image{
+	min-height: 150px;
+	background-color: #dddddd;
+	position: relative;
+
+		.components-button{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+				&.image-button{
+					width: 100%;
+					height: 100%;
+				}
+		}
+}
+

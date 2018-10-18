@@ -1,0 +1,98 @@
+.absolutte-section-video{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f8f9fa;
+    position: relative;
+    min-width: 100% !important;
+
+        .absolutte-video-title{
+            text-transform: uppercase;
+            color: $secondary;
+            font-size: 1.625rem;
+            font-weight: bold;
+            margin-bottom: 1.875rem;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing:  antialiased;
+        }
+
+        .absolutte-video-desc{
+            font-size: 1.125rem;
+            color: #6c757d;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing:  antialiased;
+            margin-bottom: 1.875rem;
+        }        
+
+}
+
+.absolutte-video-popup{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07), 0 15px 35px rgba(0,0,0,0.10);
+    border-radius: 5px;
+    position: relative;
+    z-index: 5;
+    margin-top: 8%;
+		
+    .absolutte-video-popup-link{
+        background-position: center;
+        background-size: cover;
+        display: block;
+        overflow: hidden;
+        border-radius: 5px;
+        transition: transform 400ms;
+        transform: scale(1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+            &::before{
+                position: absolute;
+                @include fa-icon;
+                @extend .fas;
+                content: fa-content($fa-var-play);
+                font-weight: 900;
+                font-size: 1.25rem;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                top: 50%;
+                left: 50%;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                text-align: center;
+                border-radius: 100px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+                color: $primary;
+                transform: translate(-50%,-50%);
+            }
+
+            .no-touch &:hover{
+                transform: scale(1.05);
+            }
+    }
+}
+
+
+// Small and up
+@media (min-width: 576px) {
+    .absolutte-section-video{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .absolutte-video-popup{
+            
+        .absolutte-video-popup-link{
+    
+                &::before{
+                    width: 80px;
+                    height: 80px;
+                }
+
+        }
+    }
+}

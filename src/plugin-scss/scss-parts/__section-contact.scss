@@ -1,0 +1,111 @@
+.absolutte-section-contact{
+    background-color: #273061;
+    padding: 6% 0;
+    overflow: hidden;
+    min-width: 100% !important;
+
+        .absolutte-contact-title{
+            text-align: center;
+            color: #fff;
+
+                &::after{
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #fff;
+                }
+        }
+
+        .absolutte-contact-wrap{
+            background-color: #fff;
+            padding: 10%;
+            border-radius: 5px;
+            @extend .absolutte-shadow-big;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+
+                .absolutte-contact-content{
+                    margin-bottom: 15px;
+                }
+
+                .absolutte-contact-form{
+
+                        label{
+                            color: #adb5bd;
+                            display: block;
+                            -moz-osx-font-smoothing: grayscale;
+                            -webkit-font-smoothing:  antialiased;
+
+                                span{
+                                    font-size: 0.6875rem;
+                                    margin-left: 5px;
+                                }
+                        }
+
+                        input, textarea{
+                            width: 100%;
+                            margin-bottom: 0;
+                            height: 40px;
+                            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+                            border-left: none;
+                            border-right: none;
+                            border-top: none;
+                            transition: border 200ms;
+                            font-size: 1rem;
+
+                                &:focus,
+                                &.focus {
+                                    outline: 0;
+                                    border-color: rgba($color: #000000, $alpha: 0.4);
+                                   // box-shadow: $btn-focus-box-shadow;
+                                } // Disabled comes first so active can properly restyle
+                        }
+
+                        textarea{
+                            min-height: 150px;
+                        }
+
+                        input[type="submit"]{
+                            @extend .absolutte-button;
+                            display: inline-block;
+                            width: auto;
+                            height: auto;
+                            margin-bottom: 0;
+                        }
+
+                        .contact-submit{
+                            margin-bottom: 0;
+                            text-align: center;
+                        }
+                }
+        }  
+
+
+        .absolutte-diagonal-bottom{
+            align-items: flex-start;
+            bottom: 250px;
+            overflow: visible;
+
+                &::after{
+                    position: absolute;
+                    content: "";
+                    bottom: -250px;
+                    left: 0;
+                    right: 0;
+                    height: 250px;
+                    background-color: #fff;
+                    overflow: visible;
+                }
+        }
+
+}
+
+// Small and up
+@media (min-width: 576px) {
+
+}
+
+// Large and up
+@media (min-width: 992px) {
+
+}

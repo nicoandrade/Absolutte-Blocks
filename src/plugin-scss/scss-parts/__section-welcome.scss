@@ -1,0 +1,123 @@
+.absolutte-section-welcome{
+    background: #76aafc;
+    background: -moz-linear-gradient(-45deg, #76aafc 0%, #1236e3 100%);
+    background: -webkit-linear-gradient(-45deg, #76aafc 0%,#1236e3 100%);
+    background: linear-gradient(135deg, #76aafc 0%,#1236e3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76aafc', endColorstr='#1236e3',GradientType=1 );
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 0;
+    margin-bottom: 40% !important;
+    margin-top: 0 !important;
+    max-width: 100% !important;
+
+        & > div{
+            text-align: center;
+            width: 100%;
+        }
+        // Title
+        .absolutte-welcome-title{
+            color: #fff;
+            font-size: 2.8125rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            flex-shrink: 0;
+            padding: 0 5%;
+            text-align: center;
+            display: block;
+        }
+
+        // Description
+        .absolutte-welcome-desc{
+            font-size: 1rem;
+            color: #fff;
+            opacity: 0.7;
+            -moz-osx-font-smoothing: grayscale;   /* Firefox */
+            -webkit-font-smoothing:  antialiased; /* WebKit  */
+            margin-bottom: 50px;
+            padding: 0 5%;
+            text-align: center;
+            animation-delay: 150ms;
+            display: block;
+        }
+
+        // Button
+        .absolutte-welcome-button{
+            animation-delay: 300ms;
+        }
+
+        .absolutte-welcome-mockup{
+            position: relative;
+            z-index: 2;
+            width: 80%;
+            margin-top: 12%;
+            margin-bottom: -45%;
+            animation-delay: 450ms;
+            animation-duration: 1400ms;
+
+                .absolutte-welcome-mockup-screen{
+                    position: absolute;
+                    top: 5%;
+                    left: 12%;
+                    right: 12%;
+                    bottom: 36%;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    text-align: center;
+
+                        img{
+                            width: 100%;
+                        }
+                }
+
+                img{
+                    width: 100%;
+                }
+        }
+
+        .absolutte-welcome-diagonal{
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            z-index: 0;
+            overflow: hidden;
+
+                svg{
+                    width: 101%;
+                }
+        }
+}
+
+
+// Small and up
+@media (min-width: 576px) {
+    .absolutte-section-welcome{
+        padding-top: 6%;
+        margin-bottom: 280px !important;
+    
+            // Title
+            .absolutte-welcome-title{
+                font-size: 3.875rem;
+            }
+    
+            // Description
+            .absolutte-welcome-desc{
+                font-size: 1.5rem;
+            }
+
+
+            .absolutte-welcome-mockup{
+                width: 50%;
+                margin-top: 4%;
+                margin-bottom: -25%;
+            }
+    }
+}

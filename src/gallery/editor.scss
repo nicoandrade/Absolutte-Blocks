@@ -1,0 +1,45 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.editor-block-list__block[data-type="absolutte-blocks/gallery"]{
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.absolutte-section-gallery{
+		.absolutte-testimonials-title{
+				&::after{
+					display: none;
+				}
+
+				&.mce-content-body::after{
+					display: block;
+				}
+		}
+
+		.absolutte-gallery-image-upload{
+			margin-bottom: 20px;
+		}
+
+		.absolutte-gallery{
+			display: flex;
+			justify-content: flex-start;
+
+				.absolutte-gallery-item{
+					max-height: 100px;
+					margin-right: 10px;
+
+						img{
+							height: 100%;
+						}
+				}
+		}
+}
+
+
+

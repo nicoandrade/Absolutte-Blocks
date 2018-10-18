@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'absolutte';
+  src:
+    url('theme-scss/absolutte-font/fonts/absolutte.ttf?e1w708') format('truetype'),
+    url('theme-scss/absolutte-font/fonts/absolutte.woff?e1w708') format('woff'),
+    url('theme-scss/absolutte-font/fonts/absolutte.svg?e1w708#absolutte') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="absolutte-icon-"], [class*=" absolutte-icon-"], .absolutte-icon- {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'absolutte' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.absolutte-icon-advance:before {
+  content: "\e92d";
+}
+.absolutte-icon-arrows_long_right:before {
+  content: "\e92e";
+}
+.absolutte-icon-enter-left2:before {
+  content: "\e92c";
+}
+.absolutte-icon-checkmark-circle:before {
+  content: "\e927";
+}
+.absolutte-icon-cross-circle:before {
+  content: "\e928";
+}
+.absolutte-icon-notification-circle:before {
+  content: "\e929";
+}
+.absolutte-icon-question-circle:before {
+  content: "\e92a";
+}
+.absolutte-icon-enter-down2:before {
+  content: "\e92b";
+}
+.absolutte-icon-bag:before {
+  content: "\e925";
+}
+.absolutte-icon-magnifier:before {
+  content: "\e926";
+}
+.absolutte-icon-launch:before {
+  content: "\e924";
+}
+.absolutte-icon-enter-up2:before {
+  content: "\e923";
+}
+.absolutte-icon-paint-roller:before {
+  content: "\e922";
+}
+.absolutte-icon-bag2-empty:before {
+  content: "\e91c";
+}
+.absolutte-icon-bag2:before {
+  content: "\e91d";
+}
+.absolutte-icon-envelope:before {
+  content: "\e91e";
+}
+.absolutte-icon-link2:before {
+  content: "\e91f";
+}
+.absolutte-icon-arrow-left:before {
+  content: "\e920";
+}
+.absolutte-icon-arrow-right:before {
+  content: "\e921";
+}
+.absolutte-icon-tag:before {
+  content: "\e91b";
+}
+.absolutte-icon-eye:before {
+  content: "\e919";
+}
+.absolutte-icon-eye-crossed:before {
+  content: "\e91a";
+}
+.absolutte-icon-cross2:before {
+  content: "\e918";
+}
+.absolutte-icon-folder:before {
+  content: "\e90e";
+}
+.absolutte-icon-bubble:before {
+  content: "\e90f";
+}
+.absolutte-icon-user:before {
+  content: "\e910";
+}
+.absolutte-icon-calendar-31:before {
+  content: "\e911";
+}
+.absolutte-icon-volume:before {
+  content: "\e912";
+}
+.absolutte-icon-volume-high:before {
+  content: "\e913";
+}
+.absolutte-icon-pictures:before {
+  content: "\e914";
+}
+.absolutte-icon-plus:before {
+  content: "\e915";
+}
+.absolutte-icon-chevron-down:before {
+  content: "\e916";
+}
+.absolutte-icon-chevron-up:before {
+  content: "\e917";
+}
+.absolutte-icon-home5:before {
+  content: "\e909";
+}
+.absolutte-icon-pen2:before {
+  content: "\e90a";
+}
+.absolutte-icon-at-sign:before {
+  content: "\e90b";
+}
+.absolutte-icon-briefcase:before {
+  content: "\e90c";
+}
+.absolutte-icon-text-size:before {
+  content: "\e90d";
+}
+.absolutte-icon-clipboard-text:before {
+  content: "\e906";
+}
+.absolutte-icon-star-half:before {
+  content: "\e907";
+}
+.absolutte-icon-feather2:before {
+  content: "\e908";
+}
+.absolutte-icon-chevron-left:before {
+  content: "\e904";
+}
+.absolutte-icon-chevron-right:before {
+  content: "\e905";
+}
+.absolutte-icon-cart:before {
+  content: "\e900";
+}
+.absolutte-icon-cart-empty:before {
+  content: "\e901";
+}
+.absolutte-icon-cart-full:before {
+  content: "\e902";
+}
+.absolutte-icon-cart-plus:before {
+  content: "\e903";
+}

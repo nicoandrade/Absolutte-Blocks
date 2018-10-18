@@ -1,0 +1,50 @@
+.absolutte-service{
+    margin-bottom: 12%;
+
+        .absolutte-service-content-wrap{
+
+                .absolutte-service-title{
+                    margin-bottom: 0.68181818181818em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.375rem;
+                    color: #495057;
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing:  antialiased;
+                }
+
+                .absolutte-service-content{
+                    margin-bottom: 1.25em;
+                    font-size: 0.875rem;
+                    line-height: 1.92857142857143em;
+                    color: #adb5bd;
+                }
+        }
+
+        .absolutte-service-action{
+        }
+}
+
+
+@for $i from 1 through 4 {
+    .absolutte-service:nth-child(#{$i}) {
+        animation-delay: #{$i * .1}s;
+    }
+}
+
+.absolutte-service-icon-wrap{
+    background-color: #d8f1bd;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5625rem;
+    position: relative;
+    z-index: 1;
+
+        img{
+            width: 50%;
+        }
+}

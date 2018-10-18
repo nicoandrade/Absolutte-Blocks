@@ -1,0 +1,70 @@
+.absolutte-section-numbers{
+    background-color: #f8f9fa;
+    padding: 8% 0;
+    min-width: 100% !important;
+
+    .absolutte-numbers-wrap{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+            .absolutte-number{
+                flex-grow: 1;
+                margin: 2%;
+                text-align: center;
+
+                    .aboslute-number-image{
+                        max-width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    .absolutte-number-number{
+                        font-size: 1.375rem;
+                        color: $gray-800;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                        -moz-osx-font-smoothing: grayscale;
+                        -webkit-font-smoothing:  antialiased;
+                    }
+
+                    .absolutte-number-title{
+                        text-transform: uppercase;
+                        color: #adb5bd;
+                        font-weight: bold;
+                        font-size: 0.875rem;
+                        -moz-osx-font-smoothing: grayscale;
+                        -webkit-font-smoothing:  antialiased;
+                    }
+            }
+    }
+        
+}
+
+// Small and up
+@media (min-width: 576px) {
+
+}
+
+// Large and up
+@media (min-width: 992px) {
+
+    .absolutte-section-numbers{
+        padding: 8% 0;
+    
+        .absolutte-numbers-wrap{
+    
+                .absolutte-number{
+    
+    
+                        .absolutte-number-number{
+                            font-size: 1.9375rem;
+                        }
+    
+                        .absolutte-number-title{
+                            font-size: 0.875rem;
+                        }
+                }
+        }
+            
+    }
+}

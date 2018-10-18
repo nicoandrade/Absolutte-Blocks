@@ -1,0 +1,52 @@
+.absolutte-section-app-store{
+
+        .absolutte-app-store-mockup{
+            width: 45%;
+            margin-top: 2%;
+        }
+
+        .absolutte-app-store-buttons{
+            margin: 10% 0;
+            text-align: center;
+
+                .absolutte-app-store-button{
+                    margin-right: 4%;
+                    margin-bottom: 4%;
+                }
+        }
+}
+
+// Small and up
+@media (min-width: 576px) {
+    .absolutte-section-app-store{
+
+            .absolutte-app-store-mockup{
+                margin-top: 0;
+            }
+
+            .absolutte-app-store-buttons{
+                margin: 10% 0;
+                text-align: center;
+
+                    .absolutte-app-store-button{
+                        margin-right: 0;
+                        margin-bottom: 4%;
+                    }
+            }
+    }
+}
+
+// Large and up
+@media (min-width: 992px) {
+    .absolutte-section-app-store{
+
+            .absolutte-app-store-buttons{
+                margin: 13% 0;
+
+                    .absolutte-app-store-button{
+                        margin-right: 4%;
+                        margin-bottom: 4%;
+                    }
+            }
+    }
+}

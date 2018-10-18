@@ -1,0 +1,20 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ .absolutte-service .absolutte-service-icon-wrap .components-button {
+ 	justify-content: center;
+ }
+
+ /* Columns Blocks
+/*----------------------------------------------------------------------*/
+.absolutte-columns{
+	display: block;
+
+	.wp-block-column{
+		display: block;
+	}
+}

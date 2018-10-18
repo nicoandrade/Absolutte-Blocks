@@ -1,0 +1,59 @@
+.absolutte-section-clients{
+
+        .absolutte-clients-title{
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ced4da;
+            font-size: 1.125rem;
+            font-weight: bold;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing:  antialiased;
+        }
+
+}
+.absolutte-clients{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+        .absolutte-client{
+            flex-basis: 29%;
+            margin: 2%;
+            transition: opacity 200ms;
+            opacity: 0.5;
+            text-align: center;
+
+                .no-touch &:hover{
+                    opacity: 1;
+                }
+
+                img{
+                    max-width: 100%;
+                }
+        }
+}
+
+// Small and up
+@media (min-width: 576px) {
+    .absolutte-clients{
+    
+            .absolutte-client{
+                flex-basis: 21%;
+                margin: 2%;
+            }
+    }
+}
+
+// Large and up
+@media (min-width: 992px) {
+    .absolutte-clients{
+    
+            .absolutte-client{
+                flex-basis: 16%;
+                margin: 2%;
+            }
+    }
+}

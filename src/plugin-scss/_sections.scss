@@ -1,0 +1,41 @@
+.absolutte-section{
+    margin: 20% 0;
+    position: relative;
+}
+
+// Small and up
+@media (min-width: 576px) {
+    .absolutte-section{
+        margin: 8% 0;
+    }
+}
+
+// Welcome Section
+@import "scss-parts/__section-welcome";
+
+// Services Section
+@import "scss-parts/__services";
+
+// Video Section
+@import "scss-parts/__section-video";
+
+// CTA Section
+@import "scss-parts/__section-cta";
+
+// Image Section
+@import "scss-parts/__section-image";
+
+// Clients Section
+@import "scss-parts/__section-clients";
+
+// Gallery Section
+@import "scss-parts/__section-gallery";
+
+// Cards Section
+@import "scss-parts/__section-cards";
+
+// Screenshot Section
+@import "scss-parts/__section-screenshot";
+
+// Blog Section
+@import "scss-parts/__section-blog";

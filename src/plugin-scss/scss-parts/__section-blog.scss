@@ -1,0 +1,91 @@
+.absolutte-section-blog{
+
+        .absolutte-blog-post{
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: nowrap;
+            @extend .absolutte-shadow-big;
+            margin-bottom: 30px;
+            min-height: 115px;
+
+                &.absolutte-blog-post-big{
+                    flex-wrap: wrap;
+
+                        .absolutte-blog-post-image{
+                            flex-basis: 100%;
+                            padding-bottom: 50%;
+
+                        }
+
+                        .absolutte-blog-post-content{
+                            flex-basis: 100%;
+                            padding: 6%;
+
+                                .absolutte-blog-post-title{
+                                    font-size: 1.25rem;
+                                }
+                        }
+                }
+
+                .absolutte-blog-post-image{
+                    background-position: center;
+                    background-size: cover;
+                    flex-basis: 30%;
+                    position: relative;
+
+                    a{
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba($color: #000000, $alpha: 0);
+                        transition: background 200ms;
+                        z-index: 1;
+
+                            .no-touch &:hover{
+                                background-color: rgba($color: #000000, $alpha: 0.2);
+                            }
+                    }
+                }
+
+                &.not-has-image{
+                        .absolutte-blog-post-image{
+                            display: none;
+                        }
+                }
+
+                .absolutte-blog-post-content{
+                    padding: 4.5%;
+                    flex-basis: 70%;
+
+                        .absolutte-blog-post-title{
+                            font-size: 1rem;
+
+                            a{
+                                display: block;
+                            }
+
+                            
+                        }
+
+                        .absolutte-blog-post-date{
+                            font-size: 0.875rem;
+
+                                a{
+                                    color: #adb5bd;
+                                }
+                            
+                        }
+                }
+        }
+}
+
+@for $i from 1 through 5 {
+    .absolutte-section-blog .absolutte-blog-post:nth-child(#{$i}) {
+        animation-delay: #{$i * .1}s;
+    }
+}

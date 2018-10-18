@@ -1,0 +1,12 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.editor-block-list__block[data-type="absolutte-blocks/phone"]{
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}

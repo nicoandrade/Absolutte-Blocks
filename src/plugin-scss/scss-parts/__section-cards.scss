@@ -1,0 +1,75 @@
+.absolutte-section-cards{
+    background-color: #f8f9fa;
+    padding: 8% 0;
+    min-width: 100% !important;
+}
+
+.absolutte-card{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fff;
+    @extend .absolutte-shadow-big;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 8%;
+    position: relative;
+    z-index: 5;
+
+        .absolutte-card-image{
+            background-size: cover;
+            background-position: center;
+            flex-basis: 100%;
+            padding-bottom: 60%;
+        }
+
+        .absolutte-card-content{
+            flex-basis: 100%;
+            padding: 10%;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing:  antialiased;
+
+                .absolutte-card-title{
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    color: $primary;
+                    text-transform: uppercase;
+                    margin-bottom: 1.25rem;
+                }
+
+                .absolutte-card-text{
+                    line-height: 1.625rem;
+                    color: #6c757d;
+                }
+        }
+}
+
+
+// Small and up
+@media (min-width: 576px) {
+    .absolutte-card{
+
+            .absolutte-card-image{
+                flex-basis: 30%;
+                padding-bottom: 0;
+            }
+    
+            .absolutte-card-content{
+                flex-basis: 70%;
+                padding: 7%;
+            }
+    }
+}
+
+// Large and up
+@media (min-width: 992px) {
+    .absolutte-card{
+        margin-bottom: 0;
+
+    
+            .absolutte-card-content{
+                padding: 8%;
+            }
+    }
+}

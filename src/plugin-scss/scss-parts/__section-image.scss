@@ -1,0 +1,32 @@
+.absolutte-section-image{
+
+        .absolutte-image-image{
+            text-align: center;
+            @extend .absolutte-shadow-big;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 8%;
+
+                img{
+                    max-width: 100%;
+                }
+        }
+
+        .absolutte-image-content{
+        }
+}
+
+// Large and up
+@media (min-width: 576px) {
+    .absolutte-section-image{
+
+        .absolutte-image-image{
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Large and up
+@media (min-width: 992px) {
+
+}

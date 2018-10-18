@@ -1,0 +1,143 @@
+.absolutte-section-cta{
+    padding: 4% 10%;
+    background-color: #f8f9fa;
+    min-width: 100% !important;
+}
+
+.absolutte-cta{
+    text-align: center;
+    position: relative;
+    padding: 10%;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07), 0 15px 35px rgba(0,0,0,0.10);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 5;
+    background-color: #fff;
+
+        .absolutte-cta-content{
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            display: block;
+            flex-basis: 100%;
+            vertical-align: top;
+            margin-right: 0;
+            margin-bottom: 0;
+            text-align: center;
+                
+                .absolutte-cta-title{
+                    font-size: 1.75rem;
+                    font-weight: bold;
+                    margin-bottom: 0.44444444444444em;
+                    color: $primary;
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing:  antialiased;
+                }
+
+                .absolutte-cta-text{
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing:  antialiased;
+
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+        }
+
+        .absolutte-cta-buttons{
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-top: 20px;
+
+                .absolutte-cta-primary-btn{
+                    margin-bottom: 15px;
+                }
+
+                .absolutte-cta-secundary-btn{
+                    margin-left: 0;
+                }
+        }
+
+}
+
+
+// Small and up
+@media (min-width: 576px) {
+
+}
+
+// Medium and up
+@media (min-width: 768px) {
+    .absolutte-cta{
+        padding: 6%;
+        flex-wrap: no-wrap;
+
+            .absolutte-cta-content{
+                flex-basis: 50%;
+                margin-right: 15%;
+                margin-bottom: 0;
+                text-align: left;
+                    
+                    .absolutte-cta-title{
+                        font-size: 1.75rem;
+                        margin-bottom: 0.44444444444444em;
+                    }
+            }
+
+            .absolutte-cta-buttons{
+                flex-basis: 35%;
+
+                    .absolutte-cta-primary-btn{
+                        margin-bottom: 20px;
+                    }
+
+                    .absolutte-cta-secundary-btn{
+                        margin-left: 0;
+                    }
+            }
+
+    }
+}
+
+// Large and up
+@media (min-width: 992px) {
+    .absolutte-cta{
+        padding: 4%;
+        flex-wrap: no-wrap;
+
+            .absolutte-cta-content{
+                flex-basis: 50%;
+                margin-right: 15%;
+                margin-bottom: 0;
+                text-align: left;
+                    
+                    .absolutte-cta-title{
+                        font-size: 1.75rem;
+                        margin-bottom: 0.44444444444444em;
+                    }
+            }
+
+            .absolutte-cta-buttons{
+                margin-top: 0;
+                
+
+                    .absolutte-cta-primary-btn{
+                        margin-bottom: 5px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+
+                    .absolutte-cta-secundary-btn{
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 5px;
+                    }
+            }
+
+    }
+}

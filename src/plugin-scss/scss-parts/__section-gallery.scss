@@ -1,0 +1,76 @@
+.absolutte-section-gallery{
+    min-width: 100% !important;
+
+        .absolutte-gallery{
+            width: 100%;
+
+                .absolutte-gallery-item{
+                    display: inline-block;
+                    width: auto !important;
+                    height: 20vh;
+                    margin: 1% 1% 7%;
+                    transition: all 200ms ease-in-out;
+                    transform: translateY(0);
+
+                        .no-touch &:hover{
+                            transform: translateY(-10px);
+                            
+                                a img{
+                                    @extend .absolutte-shadow-big-hover;
+                                }
+                        }
+                    
+
+                    &:nth-child(1){
+                        padding-left: 4vw;
+                    }
+
+                        a{
+                            display: block;
+
+                                img{
+                                    height: 20vh;
+                                    width: auto;
+                                    max-width: none;
+                                    border-radius: 10px;
+                                    @extend .absolutte-shadow-big;
+                                }
+                        }
+                }
+        }
+}
+@for $i from 1 through 10 {
+    .absolutte-gallery .absolutte-gallery-item:nth-child(#{$i}) {
+        animation-delay: #{$i * .1}s;
+    }
+}
+
+
+// Small and up
+@media (min-width: 576px) {
+   
+}
+
+// Large and up
+@media (min-width: 992px) {
+    .absolutte-section-gallery{
+            .absolutte-gallery{
+
+                    .absolutte-gallery-item{
+                        height: 40vh;
+                        margin: 1% 1% 5%;
+
+                        &:nth-child(1){
+                            padding-left: 6vw;
+                        }
+
+                            a{
+
+                                    img{
+                                        height: 40vh;
+                                    }
+                            }
+                    }
+            }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "absolutte-blocks",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cgb-scripts start",
+    "build": "cgb-scripts build",
+    "eject": "cgb-scripts eject"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^1.1.1",
+    "cgb-scripts": "1.9.8"
+  }
+}
