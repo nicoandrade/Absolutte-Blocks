@@ -2,8 +2,8 @@
 Contributors: nicoandrade
 Tags: blocks, editor, gutenberg, gutenberg blocks, page builder
 Requires at least: 3.7
-Tested up to: 4.9.8
-Stable tag: 1.0.1
+Tested up to: 5.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 == Description ==
@@ -26,6 +26,10 @@ Just install, activate and start creating pages or post with Gutenberg.
 Yes, here: [https://github.com/nicoandrade/Absolutte-Blocks](https://github.com/nicoandrade/Absolutte-Blocks)
 
 == Changelog ==
+
+= 1.0.2 =
+
+* Fixed: styles load dependencies
 
 = 1.0.1 =
 
